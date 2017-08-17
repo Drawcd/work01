@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .nav-bar-svg {
+        fill: #736357;
+      }
+    </style>
+  </defs>
+  <title>nav_bar</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1" ><rect class="nav-bar-svg" width="50" height="10"/><rect class="nav-bar-svg" y="17" width="50" height="10"/><rect class="nav-bar-svg" y="34" width="50" height="10"/><rect class="nav-bar-svg" y="51" width="50" height="10"/></g>
+  </g>
+</svg>

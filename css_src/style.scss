@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import 'reset';  // _reset.scss iclude 적용 시킨다.
+
+@import 'common';
+
+@import 'header';
+
+@import 'atomic';
+
+@import 'footer';
+
+@import 'section01';
+
+@import 'section02';
+
+@import 'section03';

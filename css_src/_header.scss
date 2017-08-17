@@ -1,0 +1,188 @@
+.gnb-button {
+    position:fixed;
+    z-index: 10;
+  &-list {
+
+    &-item {
+      position:absolute;
+
+      &:nth-child(1) {
+
+        & img {
+          width:470px;
+          height:600px;
+        }
+      }
+    }
+  }
+}
+
+.gnb {
+  &-list {
+
+    &-item {
+      position:fixed;
+      z-index: 5;
+      &:nth-child(1) {
+        -webkit-transition: all .45s ease-in-out;
+        transition: all .45s ease-in-out;
+        & img {
+          width:470px;
+          height:600px;
+          margin-right:-470px;
+          -webkit-transition: margin-right .35s ease-in-out;
+          transition: margin-right .35s ease-in-out;
+        }
+      }
+      &:nth-child(1).rightHidden {
+        & img {
+          width:470px;
+          height:600px;
+          margin-right:0px;
+        }
+      }
+    }
+  }
+}
+
+/* toggle */
+
+#toggle {
+  display: block;
+  width: 120px;
+  height: 120px;
+  position:absolute;
+  background:#ffee00;
+  border-radius: 50%;
+}
+
+#toggle .sun-light {
+  z-index:2000;
+  position:absolute;
+  top: -21px;
+  left:-21px;
+  width: 162px;
+  height:162px;
+  background:url(../images/sun_light.svg) no-repeat;
+  display:block;
+  -moz-transition: sun-light 5s linear infinite ;
+  -webkit-animation: sun-light 5s linear infinite ;
+  animation: sun-light 5s linear infinite ;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size :cover;
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+#toggle .sun-eye:before {
+  content: "";
+  // display: block;
+  position: absolute;
+  width:20px;
+  height:20px;
+  top:10px;
+  left:25px;
+  background:#333;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+#toggle .sun-eye:after{
+  content: "";
+  // display: block;
+  position: absolute;
+  width:20px;
+  height:20px;
+  top:10px;
+  left:75px;
+  background:#333;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+#toggle .sun-eye {
+  position: relative;
+  top:26px;
+  display: block;
+}
+
+#toggle .sun-eye,
+#toggle .sun-eye:after,
+#toggle .sun-eye:before {
+  transition: all 0.3s;
+}
+#toggle .sun-mouth {
+  position:absolute;
+  top: 72px;
+  left:50%;
+  width:60px;
+  height:30px;
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 0px 0px 30px 30px;
+  overflow: hidden;
+  transition: all 0.3s;
+  transform: scale(1) translateX(-50%);
+}
+#toggle .sun-mouth-in {
+  position:absolute;
+  top: 10px;
+  left:10px;
+  width:40px;
+  height:18px;
+  background: red;
+  border: 1px solid red;
+  border-radius: 20px 20px 0px 0px ;
+  transition: all 0.3s;
+}
+
+
+// animation
+@keyframes sun-light {
+  0% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotate(180deg) translate(0px, 0px);
+  }
+  100% {
+    transform: rotate(360deg) translate(0px, 0px);
+  }
+}
+
+
+
+/* on activation */
+#toggle.on .sun-light {
+  -webkit-animation: sun-light 2s linear infinite ;
+  animation: sun-light 2s linear infinite ;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size :cover;
+    transform: scale(2.2) translateX(-40%);
+    -moz-transform: scale(2.2) translateX(-40%);
+    -webkit-transform: scale(2.2) translateX(-40%);
+}
+
+#toggle.on .sun-eye {
+  background-color: transparent;
+}
+#toggle.on .sun-eye {
+  background-color: transparent;
+}
+#toggle.on .sun-eye:before {
+  transform: rotate(180deg) translate(0px, 0px);
+  border: 1px solid #ffcc00;
+  height:10px;
+  border-radius: 0px 0px 20px 20px ;
+}
+#toggle.on .sun-eye:after {
+  transform: rotate(180deg) translate(0px, 0px);
+  border: 1px solid #ffcc00;
+  height:10px;
+  border-radius: 0px 0px 20px 20px ;
+}
+#toggle.on .sun-mouth {
+  transform: scale(1.2) translateX(-40%);
+}
