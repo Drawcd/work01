@@ -1,3 +1,6 @@
+.displayNone {
+  display:none !important;
+}
 .gnb-button {
     position:fixed;
     z-index: 10;
@@ -23,6 +26,15 @@
     &-item {
       position:fixed;
       z-index: 5;
+      &-link {
+        & p {
+        text-indent: -999999px;
+        position:absolute;
+        }
+        & img {
+          display:block;
+        }
+      }
       &:nth-child(1) {
         -webkit-transition: all .45s ease-in-out;
         transition: all .45s ease-in-out;
@@ -57,7 +69,7 @@
 }
 
 #toggle .sun-light {
-  z-index:2000;
+  z-index:20;
   position:absolute;
   top: -21px;
   left:-21px;
@@ -135,6 +147,11 @@
   border: 1px solid red;
   border-radius: 20px 20px 0px 0px ;
   transition: all 0.3s;
+}
+
+.toggle-btn p{
+  position:absolute;
+  text-indent: -9999999px;
 }
 
 

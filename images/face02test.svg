@@ -1,0 +1,22 @@
+<svg id="testtest" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8f5e13;
+      }
+      .cls-2 {
+        fill: #ffebcb;
+      }
+      .cls-3 {
+        fill: #453434;
+      }
+      .cls-4 {
+        fill: #bd862f;
+      }
+    </style>
+  </defs>
+  <title>Asset 59</title>
+  <g id="Layer 2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M9.4,24.91S-2.11,21.22.34,11.35,12.26-2.24,19.67,1.46s5.77,14.39,5.77,14.39Z"/><path class="cls-2" d="M13.16,19.77s-5-1.61-4-5.93,5.21-5.94,8.45-4.33,2.52,6.29,2.52,6.29Z"/><path class="cls-1" d="M78.5,24.85s11.51-3.71,9-13.58S75.6-2.3,68.2,1.41s-5.75,14.4-5.75,14.4Z"/><path class="cls-2" d="M74.74,19.71s5-1.62,4-5.94-5.22-5.93-8.46-4.31-2.51,6.3-2.51,6.3Z"/><ellipse class="cls-1" cx="44.89" cy="38.44" rx="41.64" ry="33.62"/><circle class="cls-3" cx="24.29" cy="40.23" r="3.24" transform="translate(-0.04 0.02) rotate(-0.06)"/><ellipse class="cls-4" cx="44.85" cy="55.22" rx="13.09" ry="15.47"/><path class="cls-3" d="M51.8,54.37c0,2.72-3.31,7.91-7.39,7.92S37,57.11,37,54.38s3.31-4.94,7.4-4.94S51.79,51.64,51.8,54.37Z"/><circle class="cls-3" cx="65.36" cy="40.19" r="3.24"/></g>
+  </g>
+</svg>

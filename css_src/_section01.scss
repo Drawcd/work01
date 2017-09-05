@@ -26,7 +26,11 @@
     }
   }
 }
-
+#stage01 {
+  overflow: hidden;
+  width:100vw;
+  height:100vh;
+}
 .section01{
   transform: scale(1);
   transition: all 0.3s;
@@ -413,11 +417,6 @@
     }
   }
 }
-
-footer{
-  z-index:40;
-}
-
 
 @keyframes puff-movement {
   0% {

@@ -39,14 +39,14 @@ $(window).resize( function () {
       reSizeD = sec01Width / 1920;
       reXUU = ( sec01Width - 1920 )/2;
       navItemBtn = (( 162 * reSizeD ) /4 );
-      $('.text03').text('type-b');
+      // $('.text03').text('type-b');
     }
 
   } else if ( sec01Width > 1920) {
     reSizeD = sec01Height / 1080;
     reXUU = 0;
 
-    $('.text03').text('type-c');
+    // $('.text03').text('type-c');
   } else {
     reSizeD = sec01Height / 1080;
     reXUU = ( sec01Width - 1920 )/2;
@@ -54,7 +54,7 @@ $(window).resize( function () {
 
     // navItemBtn = ( ( ( ( sec01Height * 1.778)/reSizeD ) - (sec01Width/reSizeD) )/2 );
     //
-    $('.text03').text('type-d');
+    // $('.text03').text('type-d');
 
   }
 
@@ -96,13 +96,13 @@ $(window).resize( function () {
 
 
 
-  $('.text01').text('가로 비율 , 1920 UP     (reXUU) : '+ reXUUtext );
-  $('.text02').text('가로 비율 , 1920 DOWN (reSizeD) : '+ reSizeD);
-  $('.winwidth').text('가로 창 크기 : '+ sec01Width + 'px');
-  $('.winheight').text('세로 창 크기 : '+ sec01Height + 'px');
-  $('.section-01Ratio').text('가로세로비율 : '+ sec01Ratio.toFixed(4) );
-  $('.text04').text('sec01Width x reSizeD  : '+ sec01Width + '-' + reSizeD + '=' + (sec01Width * reSizeD));
-  $('.text05').text('reSizeD : ' +  reSizeD );
+  // $('.text01').text('가로 비율 , 1920 UP     (reXUU) : '+ reXUUtext );
+  // $('.text02').text('가로 비율 , 1920 DOWN (reSizeD) : '+ reSizeD);
+  // $('.winwidth').text('가로 창 크기 : '+ sec01Width + 'px');
+  // $('.winheight').text('세로 창 크기 : '+ sec01Height + 'px');
+  // $('.section-01Ratio').text('가로세로비율 : '+ sec01Ratio.toFixed(4) );
+  // $('.text04').text('sec01Width x reSizeD  : '+ sec01Width + '-' + reSizeD + '=' + (sec01Width * reSizeD));
+  // $('.text05').text('reSizeD : ' +  reSizeD );
   // $('.text06').text('test4 : ' +  test4 );
 });
 
